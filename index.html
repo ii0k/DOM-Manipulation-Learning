@@ -42,9 +42,24 @@
 <button id="run" type="button" class="button is-primary" pys-onClick="count">Count</button>
 <button id="clear" type="button" class="button is-danger" pys-onClick="clear">Clear</button>
 
-</body>
-
 <p>Word Count -</p>
 <p id="output"></p>
+
+</body>
+
+<py-script>
+
+input_text = Element("input_text")
+
+op = Element("output")
+
+def clear(*args, **kwargs):
+	input_text.clear()
+
+def count(*args, **kwargs):
+	number = len(input_text)
+	op.write(number)
+
+</py-script>
 
 </html>
