@@ -1,1 +1,0 @@
-const.sayJoke = () => alert("Chicken Butt!")
